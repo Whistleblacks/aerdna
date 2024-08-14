@@ -1,12 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background: #fbfbfb;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 410px;
+        width: 329px;
+        margin: 6rem auto 8.1rem auto;
+      }
+
+      .card-content {
+        padding: 12px 44px;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Hai Cantik!</h1>
-    <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" />
-    <h1>Kamu itu lucu kann?</h1>
-    <button id="btn_mau" onclick="alert('yes u are so cute, and pretty too<3')">IYA</button>&nbsp;
-    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
-      engga
-    </button>
+    <div class="container">
+      <div class="card-content">
+        <h1>Hai Cantik!</h1>
+        <img src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" width="50%" height="50%"/>
+        <h1>Kamu itu lucu kann?</h1>
+        <p id="paraf"></p>
+        <button
+          id="btn_mau"
+          onclick="alert('yes u are so cute, and pretty too<3')"
+        >
+          IYA</button
+        >&nbsp;
+        <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+          engga
+        </button>
+      </div>
+    </div>
   </body>
   <script>
     function gamau(id) {
@@ -15,6 +45,10 @@
       var j = Math.floor(Math.random() * 100) + mau.offsetTop;
       id.style.left = i + "px";
       id.style.top = j + "px";
+
+      const wle = document.getElementById('paraf');
+      wle.textContent = "WLEEEEEE";
     }
   </script>
 </html>
+
